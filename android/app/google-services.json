@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "319111783467",
+    "project_id": "flutter-animation-curves",
+    "storage_bucket": "flutter-animation-curves.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319111783467:android:c1372837b8891ce0a2f66e",
+        "android_client_info": {
+          "package_name": "com.learnershome.flutter_curve_animation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACfDmIG7T-i9IeNNgAeP_rS0MzpsudpTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

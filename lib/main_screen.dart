@@ -15,18 +15,31 @@ class MainScreen extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     debugPrint('xyz, build: size: $size');
     return Scaffold(
-      body: GridView.builder(
-        padding: const EdgeInsets.all(16),
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: (size.width / itemSize).toInt(),
-          crossAxisSpacing: 16,
-          mainAxisSpacing: 16,
-          childAspectRatio: 5 / 5,
-        ),
-        itemCount: curves.length,
-        itemBuilder: (context, index) {
-          return CurveAnimationPreview(curve: curves[index]);
-        },
+      body: Column(
+        children: [
+          const Text(
+            'Flutter all Curves',
+            style: TextStyle(
+              fontSize: 36,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          Expanded(
+            child: GridView.builder(
+              padding: const EdgeInsets.all(16),
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: (size.width / itemSize).toInt(),
+                crossAxisSpacing: 16,
+                mainAxisSpacing: 16,
+                childAspectRatio: 5 / 5,
+              ),
+              itemCount: curves.length,
+              itemBuilder: (context, index) {
+                return CurveAnimationPreview(curve: curves[index]);
+              },
+            ),
+          ),
+        ],
       ),
     );
   }
